@@ -5,5 +5,5 @@ We developed an integrative analytical framework combining network-based approac
 STEM-LncCRT is an integrative analytical framework based on pan-cancer transcriptomic data. By combining network-based modeling with Bayesian network inference, it systematically identifies core regulatory triplets composed of a long non-coding RNA (lncRNA), a stemness signature gene (SSG), and an immune-related gene.
 
 <p align="center">
-<img src=Graphical Abstract.jpg height="202.3" width="204">
+<img src=Graphical_Abstract.jpg height="606.9" width="612">
 </p>
