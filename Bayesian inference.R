@@ -38,11 +38,11 @@ permutation_LS$imm_num <- lnc2ssg_imm$imm_num
 LIS <- permutation_LS[which(permutation_LS$FDR < 0.05), c(1, 2)]  # Pairs containing immune genes
 LS <- permutation_LS[which(permutation_LS$FDR >= 0.05), c(1, 2)]   # Pairs not containing immune genes
 
-write.table(LIS, paste0("./", cancer_abbr, "/11.包含免疫基因/LIS.txt"), quote = FALSE, row.names = FALSE, sep = "\t")
-write.table(LS, paste0("./", cancer_abbr, "/11.包含免疫基因/LS.txt"), quote = FALSE, row.names = FALSE, sep = "\t")
+write.table(LIS, "LIS.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+write.table(LS,"LS.txt", quote = FALSE, row.names = FALSE, sep = "\t")
 
 # Update lnc2ssg pairs
-lnc2ssg <- read.table(paste0("./", cancer_abbr, "/11.包含免疫基因/LIS.txt"), sep = "\t", header = TRUE)
+lnc2ssg <- read.table"LIS.txt", sep = "\t", header = TRUE)
 
 # Build triplets
 lnc2imm <- lnc2imm2[, 1:2]
